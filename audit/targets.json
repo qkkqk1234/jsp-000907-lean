@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "project": {
+    "root": "<absolute path to a clean checkout of this repository>",
+    "repository": "https://github.com/qkkqk1234/jsp-000907-lean",
+    "commit": "4b00331ecbf68a8b2d46fa048e7c8d2debeb4300",
+    "toolchain": "leanprover/lean4:v4.34.0"
+  },
+  "problems": [
+    {
+      "id": "erdos-1091",
+      "source": "https://www.erdosproblems.com/1091",
+      "requirements": [
+        {
+          "id": "main",
+          "description": "Second question only, in the negative: there is no f(r) -> infinity such that every 4-chromatic graph whose subgraphs on at most r vertices are 3-colourable contains an odd cycle with at least f(r) chords (APSSV 2026, arXiv:2604.06609 section 4).",
+          "targets": [
+            "main",
+            "bridge"
+          ],
+          "coverage": "full",
+          "evidence": "Statement correspondence argued in STATEMENT.md at the pinned commit, including the induced-subgraph reading and mathlib's IsChord notion; the same file lists explicitly what is not proved (Voss's first question, the sharp constant 10, K4-freeness, full 4-criticality), none of which the recorded question requires."
+        }
+      ]
+    }
+  ],
+  "targets": [
+    {
+      "id": "main",
+      "problem": "erdos-1091",
+      "role": "theorem",
+      "module": "JSP907.Main",
+      "source": "JSP907/Main.lean",
+      "declaration": "JSP907.erdos_1091_negation"
+    },
+    {
+      "id": "bridge",
+      "problem": "erdos-1091",
+      "role": "bridge",
+      "module": "JSP907.Main",
+      "source": "JSP907/Main.lean",
+      "declaration": "JSP907.erdos_1091"
+    }
+  ]
+}
