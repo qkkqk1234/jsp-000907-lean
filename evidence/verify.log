@@ -1,0 +1,55 @@
+== toolchain ==
+Lean (version 4.34.0, x86_64-w64-windows-gnu, commit 293d5d0c0c3f3dded4688b3ccd6a33939ac5102b, Release)
+Lake version 5.0.0-src+293d5d0 (Lean version 4.34.0)
+== fetching pinned dependencies (revisions come from lake-manifest.json) ==
+Current branch: HEAD
+Using cache from origin: (some leanprover-community/mathlib4)
+Attempting to download 2 file(s) from leanprover-community/mathlib4 cache at https://cache.mathlib.org/mathlib4-master
+Downloaded: 0 file(s) [attempted 1/2 = 50%, 0 KB/s], Decompressed: 0[KDownloaded: 0 file(s) [attempted 2/2 = 100%, 0 KB/s], Decompressed: 0[K
+Attempting to download 2 file(s) from leanprover-community/mathlib4 cache at https://cache.mathlib.org/mathlib4
+Downloaded: 0 file(s) [attempted 1/2 = 50%, 0 KB/s], Decompressed: 0[KDownloaded: 0 file(s) [attempted 2/2 = 100%, 0 KB/s], Decompressed: 0[K
+Warning: some files were not found in the cache.
+This usually means that your local checkout of mathlib4 has diverged from upstream.
+
+  * If you push your commits to a PR to the mathlib4 repository
+    (use a draft PR if it is not ready for review),
+    then CI will build the oleans and they will be available later.
+  * If you have already opened a PR, this may mean
+    the CI build has failed part-way through building.
+Decompressed 0 file(s)
+Already decompressed 8906 file(s)
+== clean build ==
+✔ [8924/8938] Built JSP907.Parity (21s)
+✔ [8925/8938] Built JSP907.Defs (22s)
+✔ [8926/8938] Built JSP907.Basic (21s)
+✔ [8927/8938] Built JSP907.Connected (23s)
+✔ [8928/8938] Built JSP907.Colour (24s)
+✔ [8929/8938] Built JSP907.NotThree (21s)
+✔ [8930/8938] Built JSP907.Nbr (22s)
+✔ [8931/8938] Built JSP907.Degen (20s)
+✔ [8932/8938] Built JSP907.Cycle (19s)
+✔ [8933/8938] Built JSP907.Cut (19s)
+✔ [8934/8938] Built JSP907.Blocks (19s)
+✔ [8935/8938] Built JSP907.Chord (19s)
+✔ [8936/8938] Built JSP907.Main (19s)
+✔ [8937/8938] Built JSP907 (18s)
+Build completed successfully (8938 jobs).
+== source hygiene: no sorry / native_decide / custom axioms ==
+OK: source is clean
+== axiom audit ==
+'JSP907.erdos_1091' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP907.erdos_1091_no_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP907.erdos_1091_negation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP907.colorable_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP907.not_colorable_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP907.chord_card_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP907.induce_colorable_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP907.chord_mem_locEdges' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP907.attach_not_chord' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP907.spine_not_chord' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP907.interblock_not_chord' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP907.partial_colourable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP907.exists_low_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP907.closure_all' depends on axioms: [propext, Quot.sound]
+'JSP907.pentagon_forcing' depends on axioms: [propext, Classical.choice, Quot.sound]
+OK: every audited declaration uses at most [propext, Classical.choice, Quot.sound]
