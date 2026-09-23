@@ -92,9 +92,8 @@ of the source paper; `K₄`-freeness of the construction is **not** formalized; 
 affirmative answer to the first question of #1091 is **not** formalized. None of these
 affects the refutation of the second question, which needs only a uniform constant.
 
-## Prior art
+## Other Lean work
 
-**This is not the first Lean proof of this problem, and the earlier one is stronger.**
 See `PRIOR_ART.md`.
 
 ## Verification
